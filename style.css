@@ -1,0 +1,33 @@
+
+pre {
+border: 1px solid #ccc;
+word-wrap: break-word;
+padding: 6px 10px;
+line-height: 19px;
+margin-bottom: 20px;
+}
+
+code {
+border: 1px solid #eaeaea;
+margin: 0 2px;
+padding: 0 5px;
+font-size: 12px;
+}
+
+pre code {
+border: 0;
+padding: 0;
+margin: 0;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+border-radius: 0;
+}
+
+pre, code {
+font-family: Consolas, 'Liberation Mono', Courier, monospace;
+color: #333;
+background: #f8f8f8;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}

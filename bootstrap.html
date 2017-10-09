@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bootstrap</title>
+	<script type="text/javascript" src="./public/bower_components/jquery/dist/jquery.js"></script>
+	<link rel="stylesheet" href="./public/bower_components/bootstrap/dist/css/bootstrap.css">
+	<script src="./public/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="./public/bower_components/am-pagination/dist/js/am-pagination.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>	
+	<div id="ampaginationsm"></div>
+	<pre style="font-weight: bold;" class="showlabelsm">The selected page no: 5</pre>
+
+	<div id="ampagination"></div>
+	<pre style="font-weight: bold;" class="showlabel">The selected page no: 5</pre>
+
+
+	<ul id="ampaginationlg"></ul>
+	<pre style="font-weight: bold;" class="showlabellg">The selected page no: 5</pre>
+	<script type="text/javascript">
+		var pager = window.amPagination('#ampagination',{
+		 	page:5,
+		 	totals:100,
+		 	pageSize:10,
+		 	theme:'bootstrap'
+		 });
+		pager.onChangePage(function(e){
+			jQuery('.showlabel').text('The selected page no: '+e.page);			
+		});
+		var pagersm = window.amPagination('#ampaginationsm',{
+		 	page:5,
+		 	totals:100,
+		 	pageSize:10,
+		 	theme:'bootstrap',
+			btnSize:'sm'
+		 });
+		 jQuery('#ampaginationsm').on('am.pagination.change',function(e){
+			jQuery('.showlabelsm').text('The selected page no: '+e.page);
+			
+		 });
+		 var pagerlg =jQuery('#ampaginationlg').pagination({
+			page:5,
+		 	totals:100,
+		 	pageSize:10,
+		 	theme:'bootstrap',
+			btnSize:'lg'
+		 })
+		 .onChangePage(function(e){
+			jQuery('.showlabellg').text('The selected page no: '+e.page);
+		 });
+	</script>
+</body>
+</html>
