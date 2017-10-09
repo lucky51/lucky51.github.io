@@ -1,0 +1,34 @@
+{
+  "name": "am-pagination",
+  "description": "jquery  am-pagination",
+  "authors": [
+    "lucky51 <941841706@qq.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "am-pagination"
+  ],
+  "homepage": "https://github.com/lucky51/am-pagination/",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "amazeui": "^2.7.2",
+    "bootstrap": "^3.3.7"
+  },
+  "_release": "2d663d4b14",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "2d663d4b1421dd95c5a5c766f7f8fa096970897b"
+  },
+  "_source": "https://github.com/lucky51/am-pagination.git",
+  "_target": "*",
+  "_originalSource": "am-pagination",
+  "_direct": true
+}
